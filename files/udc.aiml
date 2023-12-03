@@ -78,7 +78,7 @@
      </button>
      <button>
          <text>Mobile</text>
-         <postback>Mobile</postback>
+         <postback>Mobile Developer</postback>
      </button>
      
      </template>
@@ -89,7 +89,7 @@
  </category>
  
   <!--These are the choices if they choose to design-->
-  <!--This is the area to work with-->
+
   <category>
       <pattern>Front End Developer</pattern>
       <template>
@@ -98,7 +98,7 @@
       </template>
   </category>
   <category>
-      <pattern>Mobile</pattern>
+      <pattern>Mobile Developer</pattern>
       <template>You may be interested in Mobile Development
       <image>https://buildfire.com/wp-content/uploads/2017/10/become-mobile-app-developer.jpg</image>
       </template>
