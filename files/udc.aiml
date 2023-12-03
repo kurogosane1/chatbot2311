@@ -89,6 +89,7 @@
  </category>
  
   <!--These are the choices if they choose to design-->
+  <!--This is the area to work with-->
   <category>
       <pattern>Front End Developer</pattern>
       <template>
