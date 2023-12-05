@@ -19,7 +19,7 @@
      <pattern>My name is *</pattern>
      <template>Hi there <star/>
      <image></image>
-     Are you seeking career advice?
+     Are you seeking career advice? Enter "Yes" to proceed. 
      </template>
  </category>
  
@@ -90,18 +90,43 @@
  
   <!--These are the choices if they choose to design-->
 
-  <category>
-      <pattern>Front End Developer</pattern>
-      <template>
-          Here are some development
-          <image>https://tribulant.com/blog/wp-content/uploads/2021/07/front-end-web-development-tools-1065529f.jpg</image>
-      </template>
-  </category>
+  <!--<category>-->
+  <!--    <pattern>Front End Developer</pattern>-->
+  <!--    <template>-->
+  <!--        Here are some development-->
+  <!--        <image>https://www.2440media.com/sites/default/files/assets/images/blog/The%20Difference%20between%20Web%20Designer%2C%20Web%20Developer%2C%20and%20Web%20Programmer.jpg</image>-->
+  <!--    </template>-->
+  <!--</category>-->
   <category>
       <pattern>Mobile Developer</pattern>
       <template>You may be interested in Mobile Development
-      <image>https://buildfire.com/wp-content/uploads/2017/10/become-mobile-app-developer.jpg</image>
+      <card>
+          <image>https://buildfire.com/wp-content/uploads/2017/10/become-mobile-app-developer.jpg</image>
+          <title>Mobile Developer</title>
+          <subtitle></subtitle>
+          <button>
+              <text>Learn More</text>
+              <url>https://www.ibm.com/topics/mobile-application-development </url>
+          </button>
+      </card>
       </template>
   </category>
+  <category>
+      <pattern>Front End Developer</pattern>
+        <template>
+            You may be interested in Front End Developer and design
+            <card>
+                <image>https://www.2440media.com/sites/default/files/assets/images/blog/The%20Difference%20between%20Web%20Designer%2C%20Web%20Developer%2C%20and%20Web%20Programmer.jpg</image>
+                <title>Front End Developers</title>
+                <subtitle></subtitle>
+                  <button>
+                      <text>Learn More</text>
+                      <url>https://money.usnews.com/careers/best-jobs/web-developer </url>
+                </button>
+        </card>
+        </template>
+  </category>
+
+  
  
 </aiml>
