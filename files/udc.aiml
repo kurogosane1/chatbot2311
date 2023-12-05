@@ -50,7 +50,7 @@
      </button>
      <button>
          <text>Code</text>
-         <postback></postback>
+         <postback>Coders</postback>
      </button>
      </template>
  </category>
@@ -69,6 +69,8 @@
      </button>
      </template>
  </category>
+ 
+ <!--if the user selects computer science and selects Design as an option-->
  <category>
      <pattern>Design</pattern>
      <template>Do you like development on websites or Mobile Development?
@@ -83,20 +85,72 @@
      
      </template>
  </category>
+ 
+ <!--If the user slects computer science but likes to code-->
+ <category>
+     <pattern>Coders</pattern>
+     <template>Do you like to work with data?
+     <button>
+         <text>Yes</text>
+         <postback>Yes_to_Code</postback>
+     </button>
+     <button>
+         <text>No</text>
+         <postback>No_to_Code</postback>
+     </button>
+     </template>
+ </category>
+ 
+ <!--If they prefer not to work with data-->
+ <category>
+     <pattern>No_to_Code</pattern>
+     <template>
+         Do you like to work with Servers and Networks?
+         <button>
+             <text>Yes</text>
+             <postback>Yes_to_Code</postback>
+         </button>
+         <button>
+             <text>No</text>
+             <postback>No_to_Data</postback>
+         </button>
+     </template>
+ </category>
+ 
+ <!--If they don't like to work with data and like to work with Servers and Networks-->
+ <category>
+     <pattern>No_to_Data</pattern>
+     <template>
+        Here are some of the options 
+        <carousel>
+             <card>
+             <image>https://www.techrepublic.com/wp-content/uploads/2018/04/istock-858118324.jpg</image>
+             <title>Data Administrator</title>
+             <subtitle></subtitle>
+             <button>
+                 <text>Learn more</text>
+                 <url>https://www.techrepublic.com/article/behind-the-scenes-a-day-in-the-life-of-a-database-administrator/</url>
+             </button>
+         </card>
+         <card>
+             <image>https://cloudacademy.com/wp-content/uploads/2017/01/2022-10-14-Blog-Feature-What-is-Cloud-Computing-1-1200x620.png</image>
+             <title>Cloud Computing</title>
+             <subtitle></subtitle>
+             <button>
+                 <text>Learn more</text>
+                 <url>https://cloudacademy.com/blog/what-is-cloud-computing/</url>
+             </button>
+         </card>
+        </carousel>
+     </template>
+ </category>
+ 
  <category>
      <pattern>Code</pattern>
      <template>You may like some of these Coding</template>
  </category>
  
   <!--These are the choices if they choose to design-->
-
-  <!--<category>-->
-  <!--    <pattern>Front End Developer</pattern>-->
-  <!--    <template>-->
-  <!--        Here are some development-->
-  <!--        <image>https://www.2440media.com/sites/default/files/assets/images/blog/The%20Difference%20between%20Web%20Designer%2C%20Web%20Developer%2C%20and%20Web%20Programmer.jpg</image>-->
-  <!--    </template>-->
-  <!--</category>-->
   <category>
       <pattern>Mobile Developer</pattern>
       <template>You may be interested in Mobile Development
@@ -127,6 +181,20 @@
         </template>
   </category>
 
-  
+  <!--These are the choices if they choose Code and prefer to work with data-->
+  <category>
+      <pattern>Yes_to_Code</pattern>
+      <template>
+          <card>
+              <image>https://functionup.org/wp-content/uploads/2023/03/DataScientist_FeatureImage-1024x683-1.png</image>
+              <title>Data Scientists</title>
+              <subtitle></subtitle>
+              <button>
+                  <text>Learn More</text>
+                  <url>https://functionup.org/blog/what-skills-are-needed-for-data-scientist/</url>
+              </button>
+          </card>
+      </template>
+  </category>
  
 </aiml>
