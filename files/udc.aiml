@@ -19,7 +19,15 @@
      <pattern>My name is *</pattern>
      <template>Hi there <star/>
      <image></image>
-     Are you seeking career advice? Enter "Yes" to proceed. 
+     Are you seeking career advice? Enter "Yes" to proceed. During the process you can always enter "Exit".
+     </template>
+ </category>
+ 
+ <!--Incase they choose not to seek career advice-->
+ <category>
+     <pattern>Exit</pattern>
+     <template>
+         Sorry for seeing you leave. Please enter "Begin" to return to the begining.
      </template>
  </category>
  
@@ -92,27 +100,27 @@
      <template>Do you like to work with data?
      <button>
          <text>Yes</text>
-         <postback>Yes_to_Code</postback>
+         <postback>Data Scientist</postback>
      </button>
      <button>
          <text>No</text>
-         <postback>No_to_Code</postback>
+         <postback>No to Data</postback>
      </button>
      </template>
  </category>
  
  <!--If they prefer not to work with data-->
  <category>
-     <pattern>No_to_Code</pattern>
+     <pattern>No to Data</pattern>
      <template>
          Do you like to work with Servers and Networks?
          <button>
              <text>Yes</text>
-             <postback>Yes_to_Code</postback>
+             <postback>Yes to Servers</postback>
          </button>
          <button>
              <text>No</text>
-             <postback>No_to_Data</postback>
+             <postback>No to Servers</postback>
          </button>
      </template>
  </category>
@@ -183,9 +191,10 @@
 
   <!--These are the choices if they choose Code and prefer to work with data-->
   <category>
-      <pattern>Yes_to_Code</pattern>
+      <pattern>Data Scientist</pattern>
       <template>
-          <card>
+          You can be a Data Scientist that works with heavy data but does require knowledge of computer programing and Machine learning
+           <card>
               <image>https://functionup.org/wp-content/uploads/2023/03/DataScientist_FeatureImage-1024x683-1.png</image>
               <title>Data Scientists</title>
               <subtitle></subtitle>
@@ -196,5 +205,37 @@
           </card>
       </template>
   </category>
- 
+  
+  <!--These are the choices in case they choose not to work with data-->
+  <category>
+      <pattern>Yes to Servers</pattern>
+      <template>
+          You may choose to become a Database Administrator
+          <card>
+              <image>https://www.techrepublic.com/wp-content/uploads/2018/04/istock-858118324.jpg</image>
+              <title>Database Administrator</title>
+              <subtitle></subtitle>
+              <button>
+                  <text>Learn More</text>
+                  <url>https://www.techrepublic.com/article/behind-the-scenes-a-day-in-the-life-of-a-database-administrator </url>
+              </button>
+          </card>
+      </template>
+  </category>
+  <!--This is the choice in case they choose not to work with servers-->
+  <category>
+      <pattern>No to Servers</pattern>
+      If not exactly working with Servers, you can do Cloud Computing
+      <template>
+          <card>
+              <image>https://cloudacademy.com/wp-content/uploads/2017/01/2022-10-14-Blog-Feature-What-is-Cloud-Computing-1-1200x620.png</image>
+              <title>Cloud Computing</title>
+              <subtitle></subtitle>
+              <button>
+                  <text>Learn More</text>
+                  <url>https://cloudacademy.com/blog/what-is-cloud-computing/ </url>
+              </button>
+          </card>
+      </template>
+  </category>
 </aiml>
