@@ -30,6 +30,12 @@
          Sorry for seeing you leave. Please enter "Begin" to return to the begining.
      </template>
  </category>
+ <category>
+     <pattern>end</pattern>
+     <template>
+         Sorry for seeing you leave. Please enter "Begin" to return to the begining.
+     </template>
+ </category>
  
  <!--If the person said yes-->
  <category>
