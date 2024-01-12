@@ -2,7 +2,7 @@
 <aiml>
   <category>
     <pattern>*</pattern>
-    <template>I have no answer for that.Type "Begin" for the career session to begin</template>
+    <template>I have no answer for that.Type "Begin" for the career session to begin. You can always ented "Exit" or "End" to stop the chat</template>
   </category>
   
   <category>
