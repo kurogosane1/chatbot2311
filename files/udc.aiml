@@ -19,7 +19,7 @@
      <pattern>My name is *</pattern>
      <template>Hi there <star/>
      <image></image>
-     Are you seeking career advice? Enter "Yes" to proceed. During the process you can always enter "Exit".
+     Are you seeking career advice? Enter "Yes" to proceed. During the process you can always enter "Exit" or "End" to stop the chat.
      </template>
  </category>
  
